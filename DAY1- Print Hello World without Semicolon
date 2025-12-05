@@ -1,0 +1,16 @@
+public class Print_Hello_World_without_semicolon {
+
+	public static void main(String[] args) 
+	{		
+		//using While loop
+//		while (System.out.append("Hello World") != null) 
+//		{
+//            break;
+//		}
+		
+		//using for loop
+		for (System.out.println("Hello World"); ; ) {
+            break;
+		}
+	}
+}

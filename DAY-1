@@ -1,0 +1,14 @@
+JAVA : 
+- High-level
+- Object-oriented
+- Platform independent
+- Principle- write once, run anywhere
+- Code runs on JVM instead of the operating system
+Code
+public class Hello
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Hello Java");
+	}
+}

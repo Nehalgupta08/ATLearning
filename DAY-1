@@ -1,10 +1,10 @@
-JAVA : 
-- High-level
-- Object-oriented
-- Platform independent
-- Principle- write once, run anywhere
-- Code runs on JVM instead of the operating system
-Code
+====>    JAVA : 
+•	High-level
+•	Object-oriented
+•	Platform independent
+•	Principle- write once, run anywhere
+•	Code runs on JVM instead of the operating system
+-Code
 public class Hello
 {
 	public static void main(String[] args)
@@ -12,3 +12,92 @@ public class Hello
 		System.out.println("Hello Java");
 	}
 }
+
+====>    JVM (Java Virtual Machine):
+•	Runtime engine
+•	 Convert bytecode -> machine-readable code
+•	 Handling Garbage collection, memory managemnet(Heap,stack),JIT compilation, platform independence.
+
+====>    JDK (Java Development Kit):
+•	Containing JRE + Complier(javac) + tools(jarsigner,jdb)
+•	 Writing, compiling, and debugging 
+
+====>    JRE (Java Runtime Environment):
+•	 Provides libraries and a JVM required to run a Java application
+
+====>    Data Types:
+•	Primitive: byte, short, int, long, float, double, char, Boolean
+•	 Non-Primitive: String, arrays, classes, interfaces
+-code: 
+int age = 25;
+double salary = 55000.75;
+char grade = 'A';
+boolean isActive = true;
+
+====>    Variables:
+•	Store data in memory
+•	Type: Local, Instance(non-static), Static(class variables)
+-Code:
+	public class Name
+	{
+		static String company = "ABC";  // Static variable
+		int id = 101; 					// instance variable
+		
+		public void display()
+		{
+			String str = "XYZ";			//Local variable
+			System.out.println(str);
+		}
+	}
+
+====>    Operators:
+•	Perform operations on variables and values.
+•	Types: Arithmetic, Relational, Logical, Assignment, Unary, Ternary.
+-Code:
+	int a=10, b=20;
+	System.out.println(a+b);  // Arithmetic
+	System.out.println(a>b);  // Realtional
+	System.out.println(a!=b); // Logical
+
+====>    Input / Output:
+•	Input: Scanner
+•	Output: System.out.println()-
+-Code:
+		import java.util.Scanner;
+		public class IOExample {
+		public static void main(String[] args) {
+			Scanner sc = new Scanner(System.in);
+			System.out.print("Enter name: ");
+			String name = sc.nextLine();
+			System.out.println("Hello " + name);
+			}
+		}
+
+
+====>  	  Conditional Statement:
+•	Types: if, if-else, else-if, switch
+-Code:
+		int marks = 75;
+		if (marks >= 90) {
+		System.out.println("Excellent");
+		} else if (marks >= 60) {
+		System.out.println("Good");
+		} else {
+		System.out.println("Needs Improvement");
+		}
+
+====>    Loops:
+•	Types: for, while, do-while
+-Code:
+		for (int i = 1; i <= 5; i++) {
+		System.out.println("Count: " + i);
+		}
+
+
+
+
+
+
+
+
+

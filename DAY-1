@@ -17,6 +17,14 @@ public class Hello
 •	Runtime engine
 •	 Convert bytecode -> machine-readable code
 •	 Handling Garbage collection, memory managemnet(Heap,stack),JIT compilation, platform independence.
+NOTE- 
+Heap → Objects, Selenium WebElement instances
+Stack → Method calls, local variables
+Method Area → Class metadata
+PC Register → Tracks instructions
+Native Method Area → Native code
+Real-time:
+When Selenium loads large pages, objects are stored in Heap; garbage collector cleans unused ones.
 
 ====>    JDK (Java Development Kit):
 •	Containing JRE + Complier(javac) + tools(jarsigner,jdb)

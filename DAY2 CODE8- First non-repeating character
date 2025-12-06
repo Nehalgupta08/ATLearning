@@ -1,1 +1,32 @@
-
+package Day2;
+import java.util.*;
+public class First_non_repeating_character {
+	public static void main(String[] args) 
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter a string");  				//swiwss 
+		String str = scan.nextLine();
+		scan.close();
+		
+		str = str.toLowerCase();
+		char[] charr = str.toCharArray();
+		
+		Map<Character,Integer> map = new HashMap<>();
+		for(char ch: charr)
+		{
+			map.put(ch, map.getOrDefault(ch,0)+1);
+		}
+		 boolean found = false;
+	        for(char ch : charr)
+	        {
+	            if(map.get(ch) == 1)
+	            {
+	                System.out.println("First non-repeating character: " + ch);
+	                found = true;
+	                break;
+	            }
+	        }	        
+	        if(!found)
+	            System.out.println("No non-repeating character found");		
+	}
+}

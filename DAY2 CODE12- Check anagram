@@ -1,0 +1,79 @@
+package String;
+import java.util.*;
+public class Anagram 
+{
+
+	public static void main(String[] args)   
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.println("enter a first string");			//listen	
+		String str1 = scan.nextLine();
+		System.out.println("enter a second string");		//silent
+		String str2 = scan.nextLine();
+		scan.close();
+		str1 = str1.replaceAll("\\s", "").toLowerCase();
+		str2 = str2.replaceAll("\\s", "").toLowerCase();
+		
+		if(str1.length() != str2.length())
+		{
+			System.out.println("Strings are not anagram");
+		
+		}
+		else 
+		{
+			// Convert strings to char arrays
+			char[] a1 = str1.toCharArray();
+			char[] a2 = str2.toCharArray();
+			
+			// Sort a1 manually using bubble sort
+			for(int i=0;i<a1.length-1;i++)
+			{
+				for(int j=0;j<a1.length-i-1;j++)
+				{
+					if(a1[j]>a1[j+1])
+					{
+						char temp = a1[j];
+						a1[j] = a1[j+1];
+						a1[j+1] = temp;
+						
+						System.out.println("temp  " + temp + "  a1[j]  " + a1[j] + "  a1[j+1]  " + a1[j+1]);
+						
+					}
+				}
+			}
+			// Sort a2 manually using bubble sort
+			for(int i=0;i<a2.length-1;i++)
+			{
+				for(int j=0;j<a2.length-i-1;j++)
+				{
+					if(a2[j]>a2[j+1])
+					{
+						char temp = a2[j];
+						a2[j] = a2[j+1];
+						a2[j+1] = temp;
+					}
+				}
+			}
+			System.out.println("Sorted first string is "+ new String(a1));
+			System.out.println("Sorted second string is "+ new String(a2));
+			
+			//compare sorted arrays manually
+			boolean isAnagram = true;
+			for(int i=0;i<a1.length;i++)
+			{
+				if(a1[i] != a2[i])
+				{
+					isAnagram = false;
+					break;
+				}
+			}
+			if(isAnagram)
+			{
+				System.out.println("the strings are anagrams");			//string are anagram
+			}
+			else {
+				System.out.println("Not anagrams");
+			}			
+		}				
+	}
+}

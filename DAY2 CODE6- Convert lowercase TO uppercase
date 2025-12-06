@@ -1,0 +1,16 @@
+package Day2;
+import java.util.Scanner;
+
+public class Convert_lowercase_TO_uppercase {
+
+	public static void main(String[] args) 
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.println("enter a string:");
+		String str = scan.nextLine();				//nh jj jnkj knjk
+		scan.close();
+		
+		str = str.toUpperCase();
+		System.out.println("The uppercase string is: "+ str);
+	}
+}

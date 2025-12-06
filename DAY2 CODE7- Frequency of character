@@ -1,0 +1,23 @@
+package Day2;
+import java.util.*;
+
+public class Frequency_of_character {
+
+	public static void main(String[] args) 
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.println("enter a string:");
+		String str = scan.nextLine();				//nh jj jnkj knjk
+		scan.close();
+		str = str.replaceAll("\\s+","").toLowerCase();
+		char[] charr = str.toCharArray();
+		
+		Map<Character, Integer> map = new HashMap<>();
+		for(char ch : charr)
+		{
+			map.put(ch, map.getOrDefault(ch,0)+1);
+		}
+		System.out.println("the count is: "+ map);
+	}
+
+}

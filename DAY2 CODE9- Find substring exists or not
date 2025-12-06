@@ -1,0 +1,27 @@
+package Day2;
+import java.util.*;
+public class Find_substring_exists_or_not 
+{
+	public static boolean substring(String one, String two)
+	{
+		return one.contains(two);
+	}
+	public static void main(String[] args) 
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter a first string");  					
+		String str1 = scan.nextLine();
+		System.out.println("Enter a second string");  					
+		String str2 = scan.nextLine();
+		scan.close();
+        if(substring(str1, str2))
+        {
+            System.out.println("Substring FOUND");
+        }
+        else
+        {
+            System.out.println("Substring NOT FOUND");
+        }
+    }
+}
+

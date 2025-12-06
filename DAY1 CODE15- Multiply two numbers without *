@@ -1,1 +1,24 @@
+package Day1;
+import java.util.Scanner;
 
+public class Multiply_two_numbers_without_sign {
+
+	public static void main(String[] args) 
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter first number:");			// 4
+		int a = scan.nextInt();
+
+		System.out.println("Enter second number:");			//3
+		int b = scan.nextInt();
+		scan.close();
+
+		int result = 0;   // Step 1: initialize result to store multiplication
+
+		for(int i = 1; i <= b; i++)  // Step 2: repeat addition b times
+		{
+		    result = result + a;     // Adding 'a' each time
+		}
+		System.out.println("Multiplication is: " + result);  // result = 12		
+	}
+}

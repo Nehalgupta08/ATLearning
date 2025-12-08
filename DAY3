@@ -1,0 +1,63 @@
+====>    Class:
+•	It’s a blueprint or template that define the properties(variables) and behaviours (methods) of an object.
+
+====>   Object:
+•	An instance of a class. It has its own state and behaviour.
+ 
+====>    Constructors:
+•	A special method used to initialize objects.
+•	Same name as the class and no return type
+•	Types: Default, Parameterized, copy constructor
+Code:
+	Class Student
+	{
+		String name;
+		Student(String n)	// parameterized
+		{ name = n;}
+	}
+		Student s = new Student(“Hello”);
+
+====>    Inheritance:
+•	It allows one class to acquire the properties and methods of another class using the extends keyword.
+•	Promotes reusability and method overriding.
+Code: 
+	class Parent {
+    void show() { System.out.println("Parent method"); }
+}
+
+class Child extends Parent { }
+
+====>    Polymorphism:
+•	It means many forms. It is of two types:
+1.	Compile-time polymorphism → Method Overloading
+2.	Runtime polymorphism → Method Overriding
+•	It allows the same method name to behave differently.
+Code: 
+class Animal {
+void sound() { System.out.println("Animal sound"); }
+}
+
+class Dog extends Animal {
+ void sound() { System.out.println("Bark"); }
+}
+
+====>    Abstraction:
+•	Abstraction hides implementation details and shows only essential features.
+•	Achieved using abstract classes and interfaces.
+Code: 
+abstract class Shape {
+   abstract void draw();
+}
+
+class Circle extends Shape {
+    void draw() { System.out.println("Drawing Circle"); }
+}
+
+====>    Interfaces
+•	An interface is a fully abstract type containing abstract methods (Java 8+ allows default & static methods).
+•	A class implements an interface using the implements keyword.
+•	Used for abstraction and multiple inheritance support.
+
+•	====>    Encapsulation
+•	Encapsulation means wrapping data (variables) and methods into a single unit (class)
+•	We make variables private and expose them using getters/setters to protect data.
